@@ -17,8 +17,8 @@ h1, h2 {
 /* Flex container for the two forms */
 .forms-container {
     display: flex;
-    justify-content: space-around; /* Distributes space between forms */
-    gap: 40px; /* Space between the two form wrappers */
+    justify-content: space-around; 
+    gap: 40px;
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
@@ -29,8 +29,8 @@ h1, h2 {
 
 /* Individual form wrappers */
 .form-wrapper {
-    flex: 1; /* Allows forms to grow and shrink equally */
-    min-width: 300px; /* Prevents forms from becoming too narrow */
+    flex: 1; 
+    min-width: 300px;
     padding: 20px;
     border-radius: 8px;
     background-color: #fcfcfc;
@@ -118,10 +118,10 @@ form button:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
-/* Star rating display for search results */
+
 .review-stars {
     margin-top: 10px;
-    font-size: 1.5em; /* Adjust size of the stars */
-    color: #ffc700; /* Gold color for filled stars */
+    font-size: 1.5em; 
+    color: #ffc700; 
 }
 

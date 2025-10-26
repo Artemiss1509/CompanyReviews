@@ -55,7 +55,6 @@ async function handleFormSubmit(event) {
     const compHeading = document.createElement('h2');
     const rating = document.createElement('h3');
 
-    // Clear previous search results to prevent duplication
     mainDiv.innerHTML = '';
     reviewList.innerHTML = '';
 
@@ -68,11 +67,9 @@ async function handleFormSubmit(event) {
     }
 
     try {
-        // Await the response and store it
         const response = await axios.get(`http://localhost:3000/reviews/avg?name=${reviews[0].companyName}`);
         console.log(response);
         
-        // Extract the data from the response
         const avg = response.data[0].avgStars;
 
         rating.textContent = `Average rating: ${Number(avg).toFixed(1)}`;
