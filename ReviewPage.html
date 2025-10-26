@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company Reviews</title>
+        <link rel="stylesheet" href="reviewPageStyle.css">
+    </head>
+    <body>
+        <h1>Company Reviews</h1>
+        <div class="forms-container">
+            <div class="form-wrapper">
+                <form id="reviewForm">
+                    <label for="name">Company Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="reviewPos">Pros:</label>
+                    <textarea id="review" name="pros" required></textarea>
+                    <br>
+                    <label for="reviewneg">Cons:</label>
+                    <textarea id="review" name="cons" required></textarea>
+                    <br>
+                    <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="form-wrapper">
+                <div id="reviews">
+                    <h2>Search Reviews</h2>
+                    <form id="searchForm">
+                        <input type="text" id="searchCom" name="comName" placeholder="Company Name">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            
+        
+                <div id="searchResults">
+                    <ul id="reviewList">
+                        <!-- Display search results here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</html>
